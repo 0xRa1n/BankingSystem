@@ -26,5 +26,11 @@
     <ClInclude Include="Database\database.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Functions\bank.admin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions\bank.user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
