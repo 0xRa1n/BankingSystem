@@ -12,12 +12,7 @@ using namespace std;
 class BankUser {
 public:
     // user
-    bool login(MYSQL* conn) {
-        string username, password;
-        cout << "Username: ";
-        cin >> username;
-        cout << "Password: ";
-        cin >> password;
+    bool login(string username, string password, MYSQL* conn) {
 
         string query = "SELECT COUNT(*) FROM user WHERE username = '" + username + "' AND password = '" + password + "'";
         if (mysql_query(conn, query.c_str())) {
